@@ -163,6 +163,19 @@ header aside div {
 .header_aside div a {
         text-decoration: none;
         font-weight: bold;
+        font-size: 1.8rem;
+        transition: 2s;
+
+}
+/*realizando transicione al head*/
+.header_aside div a:hover{
+    background-color:rgb(30, 168, 255);
+    background-size: 2rem;
+}
+
+.body_index img {
+    transform: scale(1,0.5);
+    padding: 0;
 }
 .form_container {
     background-image: url("../images/plantadetratamiento.png");
