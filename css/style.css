@@ -1,0 +1,303 @@
+* {
+    padding: 1;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+   font-family: sans-serif, Tahoma, Verdana;
+   }
+
+ul {
+    list-style: none;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    display:inline
+  }
+ol {
+    list-style: none;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+}
+p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+}
+header  {
+    background-color: rgb(64, 89, 133);
+    background-position: center;   
+}
+header nav ul li{
+    display:inline-block;
+    border: 0.2rem solid aliceblue ;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.4rem;
+    margin: 0 0.8rem;
+    text-align: right;
+}
+header nav ul li:hover{
+    background-color: rgb(58, 182, 172);
+    color:aliceblue
+}
+.colorAzul h1 {
+    background-color: rgb(63, 184, 108);
+    text-align: center;
+    border:0.2rem solid rgb(116, 137, 135);
+    font-size: 3rem;
+}
+
+thead, th, td {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
+    background-color: aliceblue;
+}
+article div {
+    background-color: aqua;
+    width: 90%;
+    border: 4px double black;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+footer {
+    background-color: rgb(63, 184, 108);
+    }
+footer ul li {
+    text-decoration: none;
+    display: inline-block;
+    border:rgb(64, 89, 133) solid 0.2rem
+}
+footer ul li :hover {
+    background-color: rgb(58, 182, 172);
+    color: aliceblue
+}
+footer main {
+    background-color:rgb(58, 182, 172);
+}
+main section div {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem; 
+}
+main section {
+    background-color: rgb(58, 182, 172) ;
+}
+
+/*implemenmtando grillas a index*/
+
+#grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr auto auto;
+    justify-items:auto;
+    align-items: auto;
+    grid-template-areas: 
+    "aside lista"
+    "tabla nav"
+    "tabla article"
+}
+body img {
+    width: 100%;
+    height: auto;}
+
+#grilla{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.border {
+    border: 0.2rem solid white; 
+}
+
+aside {
+grid-area: aside
+}
+section#lista {
+    grid-area: lista;
+}
+section#tabla {
+    grid-area: tabla;
+}
+nav {
+    grid-area: nav;
+}
+article {
+    grid-area: article;
+}
+
+
+/*style de paginas contacto servicio noticias*/
+
+.header_nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: center; 
+    background-size: 2rem;
+    font-family: sans-serif, Tahoma,  Verdana;
+}
+.header_nav {
+    background-color:white;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+}
+header aside div {
+    font-size: 1.5rem;
+}
+.header_aside{
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap; 
+        border: 0.2rem solid rgb(64, 89, 133);
+        background-color: aliceblue;
+}
+.header_aside div a {
+        text-decoration: none;
+        font-weight: bold;
+}
+.form_container {
+    background-image: url("../images/plantadetratamiento.png");
+    background-position: center;
+}
+.form_container h3{
+    background-color: white;
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+    border-radius: 2%;
+    text-align: center;
+}
+ div select, input,textarea, button{
+    background-color: white;
+    width: 30%;
+    margin: 0.5rem;  
+}
+
+/*style a footer*/
+.footer_contact{
+    display: flex;
+    flex-direction:row;
+    padding-top: 5rem;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-items: center;  
+    font-size: 150%; 
+   }
+   .footer_contact div a {
+    text-decoration: none;
+    font-weight: bold;
+   }
+
+   /* aplicando un grid a pagina de noticias*/
+
+.contenedor{
+    display: grid;
+    height: 100%; /*ocupa el alto de la pantalla*/
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+ 
+ .item{
+    border: 3px solid white;
+    padding: 5%;
+    font-family: sans-serif, Arial, Helvetica ;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, rgb(97, 234, 222) 0%, rgb(30, 168, 255) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+ }
+/*aplicando estilos a pagina servicios*/
+
+.service_container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+   }
+.service_container h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.service_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+.service img{
+    width: 40%;
+    border-radius: 10%;
+    border: 00.2rem solid black
+}
+.service h3 {
+    text-align: center;
+    font-size: 2rem;
+}
+/*-- aplicando diseño responsive --*/
+
+@media (max-width: 560px) {
+    .form_container{
+        justify-content: center;
+    }
+    .footer_contact div, p, iframe{
+        width: 100%
+    }
+    header nav div p {
+       font-size: 1.5rem;
+    }
+    footer div p{
+        font-size: 1.5rem
+    }
+    .contenedor{
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+    }
+    .service {
+        background-size: 50%;
+        text-align: center;
+    }
+  }
+@media (max-width: 380px) {
+    .contenedor{
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr;
+    }
+   }
+@media (max-width: 768px) {
+    footer div p{
+        font-size: 1.5rem;
+    }
+    .footer_contact div, p, iframe{
+        width: 100%;
+    }
+    .footer_contact div img{
+        width: 15%
+    }
+  }
+.service_list{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+}
+.service {
+    width: auto;
+    margin: 0
+}
+@media (max-width: 1032px) {
+    .service_list {
+    flex-flow:column;
+   
+}
+}
