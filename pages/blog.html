@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <style>
         body{
             background: -webkit-linear-gradient (to right, #0d7eca, #07a73c);
@@ -17,8 +18,9 @@
 
 </head>
 <body>
+  <!-- fila logo + nav-->
  <nav class="navbar navbar-expand-lg mt-2 mb-2 navbar-light bg-light">
-    <a class="navbar-brand" href="#"><img src="images/logo.bmp" class="logo-empresa" alt="logo-empresa"></a>
+    <a class="navbar-brand" href="#"><img src="/images/logo.png" class="logo-empresa" alt="logo-empresa"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -53,7 +55,9 @@
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
       </form>
     </div>
-  </nav>    
+  </nav>   
+     <!--cierre de fila logo + nav-->
+     <!-- inicio del carousel-->
         <div id="carousel1" class="carousel slide" data-ride="carousel" data-interval="4000">
             <ol class="carousel-indicators">
               <li data-target="#carousel1" data-slide-to="0" class="active"></li>
@@ -62,24 +66,24 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" src="./images/carrusel5.jpg" alt="First slide">
+                <img class="d-block w-100" src="/images/noticia-blog1.jpg" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>GESTION AMBIENTAL</h5>
-                    <p>Las energias alternativas como medio para disminuir el calentamiento global</p>
+                    <h4>COP27: Conferencia de las Naciones Unidas sobre el Cambio Climático</h4>
+                    <p>La Conferencia anual sobre el Cambio Climático de la ONU promueve las conversaciones sobre el clima global</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="./images/carrusel6.jpg" alt="Second slide">
+                <img class="d-block w-100" src="/images/noticia-blog2.jpg" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>EQUIPO GESBAM</h5>
-                    <p>Equipo multidiciplinario al servicio de su empresa</p>
+                    <h4>COMPROMISO AMBIENTAL SUSTENTABLE</h4>
+                    <p>LAS COMUNIDADES DE LA REGION ABORDAN TEMAS QUE COMPROMETEN MAS A LA INDUSTRIA</p>
                 </div>
             </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="./images/carrusel4.png" alt="Third slide">
+                <img class="d-block w-100" src="/images/noticia-blog3.PNG" alt="Third slide">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>TODOS NECESITAMOS UN PLANETA MAS LIMPIO</h5>
-                    <p>Los residuos de los seres humanos son el responsable de la gran contaminacion de aire, suelos y aguas</p>
+                    <h4>INAUGURACION DE PLANTA DE TRATAMIENTO RESIDUOS</h4>
+                    <p>DISMINUYENDO LOS TIEMPOS DE TRASLADO CONTRIBUYENDO A UN CONSUMO MENOR DE COMBUSTIBLES FOSILES</p>
                 </div>
             </div>
             </div>
@@ -92,60 +96,151 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-
-         
         </div>
-   
-        <section class="container-fluid">
-            <div class="row w-25 mx-auto">
-              <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="/images/residuosdomiciliarios.png" alt="Residuos Domiciliarios" wind="100" height="80">
-                <div>
-                    <h3 class="fs-4 mt-4 px-4 pb-1">Residuos Comerciales</h3>
-                </div>
-                </div>
-            </div>
-            <div class="row w-25 mx-auto">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <img src="/images/residuosindustriales.png" alt="Residuos Domiciliarios" wind="100" height="80">
-                  <div>
-                      <h3 class="fs-5 mt-4 px-4 pb-1">Residuos Comerciales</h3>
-                    </div>
-                </div>
-            </div>
-              <div class="row w-25 mx-auto">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <img src="/images/residuospeligrosos.png" alt="Residuos Domiciliarios" wind="100" height="80">
-                   <div>
-                      <h3 class="fs-5 mt-4 px-4 pb-1">Residuos Comerciales</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-          
-          <img src="/images/ambiente1.jpg" class="img-fluid" alt="Responsive image">
-          <img src="/images/ambiente1.jpg" class="img-fluid" alt="Responsive image">
-          <img src="/images/ambiente1.jpg" class="img-fluid" alt="Responsive image">
+        <!-- fin del carousel-->
 
-        <!--<div class="bg-dark">
-            <div class="row">
-                <div class="col-md-12"></div>
-            </div>-->  
-               
-<!-- footer -->
-<div class="container-fluid">
-    <footer class="row footerBg paddingTB">
-      <div class="col-lg-4 col-xs-12">
-        <h3><img src="images/logo.bmp" ></h3>
+        <!--Inicio Main -->
+        <!-- bloggers-->
+       <div class="container mb-5 text-white">
+        <h3>Blog Gestion Ambiental</h3>
+        <p>Nuestro trabajo dia a dia con nuestros clientes</p>
+        <br>
+        <div class="row">
+          <!--articulos-->
+          <div class="col-12 col-md-9">
+            <!-- 1er articulo-->
+          <div class="row mb-5">
+            <div class="col-3">
+              <img src="/images/gesamb.png" alt ="Respel" class="img-fluid">
+              <h6> 22/02/2022</h6>
+            </div>
+            <div class="col-9">
+              <a href="#"><h3>Manejo de Residuos Peligrosos</h3></a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quis tempora unde nemo, doloribus praesentium officia! Aut, exercitationem iste! Debitis voluptates saepe delectus aperiam laudantium, nobis ex deleniti assumenda? Aspernatur?</p>
+              <a href="#" class="btn btn-warning btn-sm">leer mas...</a>
+            
+            </div>
+          </div>
+          <!-- 2do articulo-->
+          <div class="row mb-5">
+            <div class="col-3">
+              <img src="/images/gesamb.png" alt ="Respel" class="img-fluid">
+              <h6> 22/02/2022</h6>
+            </div>
+            <div class="col-9">
+              <a href="#"><h3>Manejo de Residuos Peligrosos</h3></a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quis tempora unde nemo, doloribus praesentium officia! Aut, exercitationem iste! Debitis voluptates saepe delectus aperiam laudantium, nobis ex deleniti assumenda? Aspernatur?</p>
+              <a href="#" class="btn btn-warning btn-sm">leer mas...</a>
+            
+            </div>
+          </div>
+          <!-- 3er articulo-->
+          <div class="row mb-5">
+            <div class="col-3">
+              <img src="/images/gesamb.png" alt ="Respel" class="img-fluid">
+              <h6>22/02/2022</h6>
+            </div>
+            <div class="col-9">
+              <a href="#"><h3>Manejo de Residuos Peligrosos</h3></a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quis tempora unde nemo, doloribus praesentium officia! Aut, exercitationem iste! Debitis voluptates saepe delectus aperiam laudantium, nobis ex deleniti assumenda? Aspernatur?</p>
+              <a href="#" class="btn btn-warning btn-sm">leer mas...</a>
+            
+            </div>
+          </div>
+          <!--inicio numeros-->
+          <div class="d-flex justify-content-center">
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+              <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-secondary">Inicio</button>
+                <button type="button" class="btn btn-secondary active">1</button>
+                <button type="button" class="btn btn-secondary">2</button>
+                <button type="button" class="btn btn-secondary">3</button>
+                <button type="button" class="btn btn-secondary">4</button>
+                <button type="button" class="btn btn-secondary">Final</button>
+              </div>
+            </div>
+          </div>
+          <!--fin numeros-->
+        </div>
+          
+          <!-- fin de articulos-->
+
+          <!-- aside-->
+          <div class=" col-12 col-md-3">
+          <!--Imagenes-->
+          <section class="container-fluid d-flex">
+            <div class="row mx-auto">
+              <div class="col">
+                <img src="/images/ambiente1.jpg" class="img-fluid" alt="Responsive image">
+              <div>
+                <h3 class="mt-2 px-4 pb-1">Residuos Especiales</h3>
+              </div>
+            <div class="row mx-auto">
+              <div class="col">
+                <img src="/images/ambiente1.jpg" class="img-fluid" alt="Responsive image">
+              <div>
+                <h3 class="fs-5 mt-2 px-4 pb-1">Residuos Especiales</h3>
+              </div>
+              <div class="row mx-auto">
+                <div class="col">
+                  <img src="/images/ambiente1.jpg" class="img-fluid" alt="Responsive image">
+                <div>
+                  <h3 class="fs-5 mt-2 px-4 pb-1">Residuos Especiales</h3>
+                </div>
+                </div>
+            </div>
+            
+        </section>
+          <!--Fin imagenes-->
+
+          </div>
+          <!-- fin aside-->
+         
+<!--inicio del footer-->
+<footer>
+  <div class="container__footer">
+      <div class="box__footer">
+          <div class="logo">
+              <img src="/images/logo.png" alt="logo">
+          </div>
       </div>
-      <div class="col-lg-4 col-xs-12">
-        <h3>REDES SOCIALES</h3>
+      <div class="box__footer">
+      <div class="terms">
+          <p>Puntos Limpios</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d213472.27505977292!2d-71.02656543085018!3d-33.2794674519636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spuntos%20reciclaje%20en%20santiago!5e0!3m2!1ses!2scl!4v1656993724866!5m2!1ses!2scl" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <div class="col-lg-4 col-xs-12">
-        <h3>CONTACTO</h3>
+  </div>
+      <div class="box__footer">
+          <h2>Link de interes</h2>
+          <a target="_blank" href="https://accounts.claveunica.gob.cl/accounts/login/?next=/openid/authorize%3Fclient_id%3Dcc892c05f6d94315be2b7539e45b9170%26redirect_uri%3Dhttps%253A%252F%252Fvu.mma.gob.cl%252Fcallback%252Fclaveunica%253Ftype%253Duser%26response_type%3Dcode%26scope%3Dopenid%2Brun%2Bname%26state%3DvwpKe5wlGCILpu39dATNwEo911YywdivbDTyHP1v">Ventanilla Unica </a>
+          <a target="_blank" href="https://rechile.mma.gob.cl/">Chile Recicla</a>
+          <a target="_blank" href="https://mma.gob.cl/">Ministerio Medio Ambiente</a>
+          <a target="_blank" href="https://retc.mma.gob.cl/">RETC</a>
       </div>
-    </footer>
-    </div>
+      <div class="box__footer">
+          <h2>Gesbam</h2>
+          <a href="#">Acerca de</a>
+          <a href="#">Profesionales</a>
+          <a href="#">Procesos</a>
+          <a href="#">Servicios</a>              
+      </div>
+      <div class="box__footer">
+          <h2>Redes Sociales</h2>
+          <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+          <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+          <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+          <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+      </div>
+  </div>
+  <div class="box__copyright">
+      <div> <p>Todos los derechos reservados © 2022 <b>GESAMB</b></p>
+      </div>
+      <div><p>contacto@gesamb.cl </p>
+      </div>
+  </div>
+</footer>
+<!--fin del footer-->
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
