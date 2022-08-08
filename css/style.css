@@ -1,3 +1,5 @@
+/*==== GLOBALES===*/
+
 * {
     padding: 0;
     margin: 0;
@@ -9,7 +11,7 @@ html {
 body {
    font-family: sans-serif, Tahoma, Verdana;
    }
-
+/*======NAVBAR======*/
 ul {
     list-style: none;
     font-weight: bold;
@@ -26,7 +28,7 @@ ol {
 p {
     font-weight: bold;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 header  {
     background-color: rgb(64, 89, 133);
@@ -67,9 +69,7 @@ footer ul li :hover {
     background-color: rgb(58, 182, 172);
     color: aliceblue
 }
-footer main {
-    background-color:rgb(58, 182, 172);
-}
+
 main section div {
     font-weight: bold;
     text-align: center;
@@ -79,7 +79,7 @@ main section {
     background-color: rgb(58, 182, 172) ;
 }
 
-/*implemenmtando grillas a index*/
+/*====GRILLAS AL INDEX====*/
 
 #grilla {
     display: grid;
@@ -124,55 +124,16 @@ article {
 }
 
 
-/*style de paginas contacto servicio noticias*/
-
-.header_nav {
-    display:flex;
-    flex-direction: row;
-    justify-content: center; 
-    background-size: 2rem;
-    font-family: sans-serif, Tahoma,  Verdana;
-}
-.header_nav {
-    background-color:white;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    justify-items: center;
-    align-items: center;
-}
-header aside div {
-    font-size: 1.5rem;
-}
-.header_aside{
-        display:flex;
-        justify-content: space-around;
-        flex-wrap: wrap; 
-        border: 0.2rem solid rgb(64, 89, 133);
-        background-color: aliceblue;
-}
-.header_aside div a {
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 1.8rem;
-        transition: 2s;
-
-}
-/*realizando transiciones al head*/
-.header_aside div a:hover{
-    background-color:rgb(30, 168, 255);
-    background-size: 2rem;
-}
+/*======TRANSICIONES=====*/
 
 .form_container {
     background-image: url("../images/plantadetratamiento.png");
-    background-position: center;
 }
 .form_container h3{
     background-color: white;
     padding: 1rem;
     width: 50%;
     margin: auto;
-    border-radius: 2%;
     text-align: center;
 }
  div select, input,textarea, button{
@@ -181,21 +142,7 @@ header aside div {
     margin: 0.5rem;  
 }
 
-/*style a footer*/
-.footer_contact{
-    display: flex;
-    flex-direction:row;
-    padding-top: 5rem;
-    justify-content:space-around;
-    flex-wrap: wrap;
-    align-items: center;  
-    font-size: 150%; 
-   }
-   .footer_contact div a {
-    text-decoration: none;
-    font-weight: bold;
-   }
-/* footer contacto*/
+/*=====FOOTER=====*/
 footer{
     width: 100%;
     padding: 2rem 0px;
@@ -209,6 +156,7 @@ footer{
     justify-content: space-between;
     max-width: 140rem;
     margin: auto;
+    font-size: 1.5rem;
     margin-top: 6rem;
     background: -webkit-linear-gradient (to right, #50b6b6, #3f475f);
     background: linear-gradient(to right, #50b6b6, #3f475f);
@@ -217,17 +165,19 @@ footer{
 display: flex;
 flex-direction: column;
 padding: 4rem;
+
 }
 .box__footer .logo img{
     width: 12rem;
     margin-top: 4rem;
 }
-.box__footer .terms {
+.box__footer .terms p {
     max-width: 25rem;
     margin-top: 0rem;
     font-weight: 200;
     color:aliceblue;
-    font-size: 2rem; 
+    font-size: 2.2rem; 
+    font-weight: bold;
 }
 .box__footer h2{
     margin-bottom: 1.5rem;
@@ -263,9 +213,9 @@ padding: 4rem;
     border: none;
     height: 1px;
     background-color: #7a7a7a;
-
 }
-   /* aplicando un grid a pagina de noticias*/
+   
+/*======GRID DE NOTICIAS=====*/
 
 .contenedor{
     display: grid;
@@ -286,63 +236,17 @@ padding: 4rem;
     align-items: center;
     font-size: 2rem;
  }
-/*aplicando estilos a pagina servicios*/
 
-.service_container{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-   }
-.service_container h1{
-    text-align: center;
-    font-size: 2.5rem;
-}
-.service_list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0;
-}
-.service img{
-    width: 40%;
-    border-radius: 10%;
-    border: 00.2rem solid black
-}
-.service h3 {
-    text-align: center;
-    font-size: 2rem;
-}
-/*-- aplicando diseño responsive --*/
+/*======STYLE SERVICIOS=====*/
 
-@media (max-width: 560px) {
-    .form_container{
-        justify-content: center;
-    }
-    .footer_contact div, p, iframe{
-        width: 100%
-    }
-    header nav div p {
-       font-size: 1.5rem;
-    }
-    footer div p{
-        font-size: 1.5rem
-    }
-    .contenedor{
-        grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 1fr 1fr 1fr; 
-    }
-    .service {
-        background-size: 50%;
-        text-align: center;
-    }
-  }
-@media (max-width: 380px) {
-    .contenedor{
-        grid-template-columns: 1fr; 
-        grid-template-rows: 1fr;
-    }
-   }
+
+
+/*=====DISEÑO RESPONSIVE====*/
+
+/*=====PANTALLA GRANDE=====*/
+
+
+/*=====PANTALLA MEDIANA=====*/
 @media (max-width: 768px) {
     footer div p{
         font-size: 1.5rem;
@@ -369,3 +273,35 @@ padding: 4rem;
    
 }
 }
+/*====PANTALLA INTERMEDIA=====*/
+@media (max-width: 560px) {
+    .form_container{
+        justify-content: center;
+    }
+    .footer_contact div, p, iframe{
+        width: 100%
+    }
+    header nav div p {
+       font-size: 1.5rem;
+    }
+    footer div p{
+        font-size: 1.5rem
+    }
+    .contenedor{
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+    }
+    .service {
+        background-size: 50%;
+        text-align: center;
+    }
+  }
+
+  /*=====PANTALLA PEQUEÑA=====*/
+@media (max-width: 380px) {
+    .contenedor{
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr;
+    }
+   }
+
