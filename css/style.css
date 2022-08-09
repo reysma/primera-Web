@@ -45,38 +45,32 @@ header nav ul li:hover{
     border:0.2rem solid rgb(116, 137, 135);
     font-size: 3rem;
 }
-
+/*======TABLA EN INDEX======*/
 thead, th, td {
     text-align: center;
     font-size: 2rem;
     font-weight: normal;
     background-color: aliceblue;
 }
-article div {
-    background-color: aqua;
-    width: 90%;
-    border: 4px double black;
-    margin-top: 1rem;
-    padding: 1rem;
-}
 
-footer ul li {
-    text-decoration: none;
-    display: inline-block;
-    border:rgb(64, 89, 133) solid 0.2rem
-}
-footer ul li :hover {
-    background-color: rgb(58, 182, 172);
-    color: aliceblue
-}
-
-main section div {
+/*======STYLE A BOX BOOSTRAP =====*/
+.text_color{
+    font-size: 4rem;
     font-weight: bold;
-    text-align: center;
-    font-size: 2rem; 
+    text-align: right;
 }
-main section {
-    background-color: rgb(58, 182, 172) ;
+.box__bootstrap{
+    border-top: rgb(64, 89, 133) solid 0.5rem;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: rgb(64, 89, 133);
+}
+.contenedor__service{
+    padding: 0;
+    margin: 0;
+}
+.container__blog{
+    text-align: center;
 }
 
 /*====GRILLAS AL INDEX====*/
@@ -141,6 +135,31 @@ article {
     width: 30%;
     margin: 0.5rem;  
 }
+/*======GRID DE NOTICIAS=====*/
+
+.contenedor{
+    display: grid;
+    height: 100%; /*ocupa el alto de la pantalla*/
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+ 
+ .item{
+    border: 3px solid white;
+    padding: 5%;
+    font-family: sans-serif, Arial, Helvetica ;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, rgb(97, 234, 222) 0%, rgb(30, 168, 255) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+ }
+
+/*======STYLE SERVICIOS=====*/
+
+
 
 /*=====FOOTER=====*/
 footer{
@@ -215,32 +234,6 @@ padding: 4rem;
     background-color: #7a7a7a;
 }
    
-/*======GRID DE NOTICIAS=====*/
-
-.contenedor{
-    display: grid;
-    height: 100%; /*ocupa el alto de la pantalla*/
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
- 
- .item{
-    border: 3px solid white;
-    padding: 5%;
-    font-family: sans-serif, Arial, Helvetica ;
-    color: white;
-    text-align: center;
-    background: linear-gradient(135deg, rgb(97, 234, 222) 0%, rgb(30, 168, 255) 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
- }
-
-/*======STYLE SERVICIOS=====*/
-
-
-
 /*=====DISEÑO RESPONSIVE====*/
 
 /*=====PANTALLA GRANDE=====*/
