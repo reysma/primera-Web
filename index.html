@@ -19,26 +19,26 @@
 <body>
     <!-- fila logo + nav-->
     <nav class="navbar navbar-expand-lg mt-2 mb-2 navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"><img src="/images/logo.png" class="logo-empresa" alt="logo-empresa"></a>
+        <a class="navbar-brand" href="index.html"><img src="./images/logo.png" class="logo-empresa" alt="logo-empresa"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse d-flex justify-content-evenly" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/servicios.html">Servicios</a>
+              <a class="nav-link" href="./pages/servicios.html">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/noticias.html">Noticias</a>
+              <a class="nav-link" href="./pages/noticias.html">Noticias</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/blog.html">Blog</a>
+              <a class="nav-link" href="./pages/blog.html">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
@@ -55,21 +55,21 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="/images/carrusel5.jpg" alt="First slide">
+            <img class="d-block w-100" src="./images/carrusel5.jpg" alt="First slide">
             <div class="carousel-caption d-none d-md-block">
                 <h5>GESTION AMBIENTAL</h5>
                 <p>Las Energias Alternativas como medio para disminuir el Calentamiento Global</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="/images/carrusel6.jpg" alt="Second slide">
+            <img class="d-block w-100" src="./images/carrusel6.jpg" alt="Second slide">
             <div class="carousel-caption d-none d-md-block">
                 <h5>EQUIPO GESBAM</h5>
                 <p>Equipo Multidiciplinario al Servicio de su Empresa</p>
             </div>
         </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="/images/carrusel4.png" alt="Third slide">
+            <img class="d-block w-100" src="./images/carrusel4.png" alt="Third slide">
             <div class="carousel-caption d-none d-md-block">
                 <h5>TODOS NECESITAMOS UN PLANETA MAS LIMPIO</h5>
                 <p>Los Seres Humanos son el Responsable de la Gran Contaminacion de Aire, Suelos y Aguas</p>
@@ -87,84 +87,43 @@
       </div>    
     </div>
     <!-- fin del carousel-->
-    
-    <main id="grilla">
-       <section id= "lista" class="border">
-            <ol>
-                <li>MANEJO DE RESIDUOS INDUSTRIALES</li>
-                <li>MANEJO DE RESIDUOS PELIGROSOS</li>
-                <li>MANEJO DE RESIDUOS HOSPITALARIOS</li>
-                <li>MANEJO DE RESIDUOS LIQUIDOS</li>
-                <li>MANEJO DE RESIDUOS RECICLBLES</li>
-                <li>MANEJO DE RESIDUOS DOMICILIARIOS</li>
-                <li>DESTRUCCIONES DE RESIDUOS</li>
-            </ol>
-        </section> 
+    <!-- inicio de grillas con bootstrap-->
+    <main> 
+    <div class="container-fluid d-flex">
+      <div class="row mt-5 mb-4">
+        <div class="col-12">
+          <div class="row"> 
+          <div class="col-6">
+            <iframe width="460" height="250" src="https://www.youtube.com/embed/JTM8sYiR-rQ?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="col-6 ">
+            <img src="./images/extensionvida.PNG" alt="Economia circular" class="img-fluid">
+          </div>
+        </div>
+      </div>
 
-        <aside class="border">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JTM8sYiR-rQ?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </aside>
-   
-        <nav class="border"> 
-            <img src="./images/contenedores.jpg" alt="Contenedores Certificados">
-            <p>CONTENEDORES CERTIFICADOS</p>
-        </nav>
-        <article class="border">
-            <img src="./images/accesorios-contenedores.PNG" alt="Accesorios de Contenedores">
-            <p>ACCESORIOS DE CONTENEDORES</p>
-        </article>
-    
-    <section id="tabla" class="border">
-        <p>VALORES DE CONTENEDORES</p>
-        <table class="border" cellpadding="2" cellspacing="2">
-            <thead>
-                <tr>
-                    <th colspan="3">CONTENEDORES DE DIVERSOS COLORES Y TAMAÑOS</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Modelo</td>
-                    <td>Descripción</td>
-                    <td>Valor Unitario(clp)</td>
-                </tr>
-                <tr>
-                    <td>C240 F</td>
-                    <td>Contenedor de 240 litros color amarillo</td>
-                    <td>$ 44.185</td>
-                </tr>
-                <tr>
-                    <td>360 F</td>
-                    <td>Contenedor de 360 litros color azul</td>
-                    <td>$ 69.000</td>
-                </tr>
-                <tr>
-                    <td>C800 F</td>
-                    <td>Contenedor de 800 litros color cafe</td>
-                    <td>$ 186.859</td>
-                </tr>
-                <tr>
-                    <td>C1100 F</td>
-                    <td>Contenedor de 1100 litros color gris</td>
-                    <td>$ 239.500</td>
-                </tr>
-                <thead>
-                    <tr>
-                        <th colspan = "3">NOTA: puede solicitar cualquier color en cualquiera de los tamaños</th>
-                    </tr>
-                </thead>
-            </tbody>
-        </table>
-    </section>
-</main>
-
-
+      <div class="container-fluid d-flex w-100 ">
+      <div class="row mt-5 mb-4">
+        <div class="col-12">
+          <div class="row"> 
+          <div class="col-6">
+            <div>
+              <img src="./images/accesorios-contenedores.PNG" alt="Contenedores Certificados" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-6">
+            <img src="./images/contenedores.jpg" alt="Contenedores Certificados" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </main>
+<!-- fin de grillas con bootstrap-->
 <!--inicio del footer-->
 <footer>
   <div class="container__footer">
       <div class="box__footer">
           <div class="logo">
-              <img src="/images/logo.png" alt="logo">
+              <img src="./images/logo.png" alt="logo">
           </div>
       </div>
       <div class="box__footer">

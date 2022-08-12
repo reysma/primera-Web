@@ -119,9 +119,18 @@ article {
 
 
 /*======TRANSICIONES=====*/
+main, .form_container{
+    font-size: 1.5rem;
+}
 
-.form_container {
-    background-image: url("../images/plantadetratamiento.png");
+.service__transition{
+    transition: all 2s;
+}
+.service__transition:hover{
+    transform: scale(1.2);
+}
+.form_container{
+    background-image: url("../images/plantadetratamiento.png")    
 }
 .form_container h3{
     background-color: white;
@@ -237,9 +246,20 @@ padding: 4rem;
 /*=====DISEÑO RESPONSIVE====*/
 
 /*=====PANTALLA GRANDE=====*/
-
+@media (max-width: 1032px) {
+    .service_list {
+    flex-flow:column;
+}
+}
+@media (max-width: 940px) { 
+    .service__transition h3{
+    font-size: 1.2rem;
+  }
+ }
 
 /*=====PANTALLA MEDIANA=====*/
+
+
 @media (max-width: 768px) {
     footer div p{
         font-size: 1.5rem;
@@ -260,17 +280,15 @@ padding: 4rem;
     width: auto;
     margin: 0
 }
-@media (max-width: 1032px) {
-    .service_list {
-    flex-flow:column;
-   
-}
-}
+
 /*====PANTALLA INTERMEDIA=====*/
 @media (max-width: 560px) {
     .form_container{
         justify-content: center;
     }
+   .service__transition h3{
+        font-size: 0.7rem;
+      }
     .footer_contact div, p, iframe{
         width: 100%
     }
@@ -297,4 +315,5 @@ padding: 4rem;
         grid-template-rows: 1fr;
     }
    }
+
 

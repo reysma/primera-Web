@@ -13,26 +13,26 @@
 <body>
       <!-- fila logo + nav-->
       <nav class="navbar navbar-expand-lg mt-0 mb-0 navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"><img src="/images/logo.png" class="logo-empresa" alt="logo-empresa"></a>
+        <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" class="logo-empresa" alt="logo-empresa"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse d-flex justify-content-evenly" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="../index.html">Inicio<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/servicios.html">Servicios</a>
+              <a class="nav-link" href="./servicios.html">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/noticias.html">Noticias</a>
+              <a class="nav-link" href="./noticias.html">Noticias</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/blog.html">Blog</a>
+              <a class="nav-link" href="./blog.html">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+              <a class="nav-link" href="./contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
@@ -44,7 +44,7 @@
     <div class="container-fluid box__bootstrap m-0 p-0">
         <div class="row max-width:100%">
           <div class="col-12 fs-10">
-            <img src="/images/portada1.jpg" alt ="Residuos Peligrosos" class="img-fluid w-100">
+            <img src="../images/portada1.jpg" alt ="Residuos Peligrosos" class="img-fluid w-100">
             <div class="carousel-caption d-none d-md-block">
                 <h3 class=text_color>SERVICIOS</h3>
           </div>
@@ -52,42 +52,51 @@
     </div>
     
     <!-- Seccion de servicios-->    
-    <div>
-                <div class="service_list">
-            <div class="service">
-                <img src="../images/residuosdomiciliarios.png" alt="servicio domiciliario">
-                <h3>Residuos Domiciliarios</h3>
-            </div>
-            <div class="service">
-                <img src="../images/residuosindustriales.png" alt="servicio domiciliario">
+   <main class=" container-fluid d-flex justify-content-around"> 
+    <div class="container-fluid w-50 text-center p-4">
+      <div class="row mt-1 p-4">
+        <div class="col-12">
+          <div class="row m-2"> 
+          <div class="col-4 service__transition">
+            <img src="../images/residuosindustriales.png" alt="servicio domiciliario" class="img-fluid">
                 <h3>Residuos Industriales</h3>
+          </div>
+          <div class="col-4 service__transition">
+            <img src="../images/residuospeligrosos.png" alt="servicio domiciliario" class="img-fluid">
+            <h3>Residuos Peligrosos</h3>
+          </div>
+          <div class="col-4 service__transition">
+            <img src="../images/residuosliquidos.png" alt="servicio domiciliario" class="img-fluid">
+            <h3>Residuos Liquidos</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="row m-2"> 
+            <div class="col-4 service__transition">
+              <img src="../images/residuosdomiciliarios.png" alt="servicio domiciliario" class="img-fluid">
+              <h3>Residuos Comerciales</h3>
             </div>
-            <div class="service">
-                <img src="../images/residuospeligrosos.png" alt="servicio domiciliario">
-                <h3>Residuos Peligrosos</h3>
-            </div>
-            <div class="service">
-                <img src="../images/residuosliquidos.png" alt="servicio domiciliario">
-                <h3>Residuos Liquidos</h3>
-            </div>
-            <div class="service">
-                <img src="../images/reciclajes.png" alt="servicio domiciliario">
+            <div class="col-4 service__transition">
+            <img src="../images/reciclajes.png" alt="servicio domiciliario" class="img-fluid">
                 <h3>Servicio Reciclaje</h3>
             </div>
-            <div class="service">
-                <img src="../images/destruccionresiduos.png" alt="servicio domiciliario">
-                <h3>Destruccion Productos</h3>
+            <div class="col-4 service__transition">
+              <img src="../images/destruccionresiduos.png" alt="servicio domiciliario" class="img-fluid">
+              <h3>Destruccion Productos</h3>
             </div>
-        </div>
-    </div>
-        
-
+          </div>
+        </div>       
+      </main>
      <!--inicio del footer-->
  <footer>
     <div class="container__footer">
         <div class="box__footer">
             <div class="logo">
-                <img src="/images/logo.png" alt="logo">
+                <img src="../images/logo.png" alt="logo">
             </div>
         </div>
         <div class="box__footer">
