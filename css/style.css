@@ -19,32 +19,14 @@ ul {
     font-size: 2rem;
     display:inline
   }
-ol {
-    list-style: none;
-    font-weight: bold;
-    text-align: center;
-    font-size: 2rem;
-}
+
 p {
     font-weight: bold;
     text-align: center;
     font-size: 1.5rem;
 }
-header  {
-    background-color: rgb(64, 89, 133);
-    background-position: center;   
-}
 
-header nav ul li:hover{
-    background-color: rgb(58, 182, 172);
-    color:aliceblue
-}
-.colorAzul h1 {
-    background-color: rgb(63, 184, 108);
-    text-align: center;
-    border:0.2rem solid rgb(116, 137, 135);
-    font-size: 3rem;
-}
+
 /*======TABLA EN INDEX======*/
 thead, th, td {
     text-align: center;
@@ -65,58 +47,10 @@ thead, th, td {
 .navbar-light .navbar-nav .nav-link{
     color: rgb(64, 89, 133);
 }
-.contenedor__service{
-    padding: 0;
-    margin: 0;
-}
+
 .container__blog{
     text-align: center;
 }
-
-/*====GRILLAS AL INDEX====*/
-
-#grilla {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr auto auto;
-    justify-items:auto;
-    align-items: auto;
-    grid-template-areas: 
-    "aside lista"
-    "tabla nav"
-    "tabla article"
-}
-body img {
-    width: 100%;
-    height: auto;}
-
-#grilla{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 90%;
-}
-
-.border {
-    border: 0.2rem solid white; 
-}
-
-aside {
-grid-area: aside
-}
-section#lista {
-    grid-area: lista;
-}
-section#tabla {
-    grid-area: tabla;
-}
-nav {
-    grid-area: nav;
-}
-article {
-    grid-area: article;
-}
-
 
 /*======TRANSICIONES=====*/
 main, .form_container{
@@ -132,13 +66,7 @@ main, .form_container{
 .form_container{
     background-image: url("../images/plantadetratamiento.png")    
 }
-.form_container h3{
-    background-color: white;
-    padding: 1rem;
-    width: 50%;
-    margin: auto;
-    text-align: center;
-}
+
  div select, input,textarea, button{
     background-color: white;
     width: 30%;
@@ -165,9 +93,6 @@ main, .form_container{
     align-items: center;
     font-size: 2rem;
  }
-
-/*======STYLE SERVICIOS=====*/
-
 
 
 /*=====FOOTER=====*/
