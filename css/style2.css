@@ -1,0 +1,238 @@
+/*==== GLOBALES===*/
+
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+   font-family: sans-serif, Tahoma, Verdana;
+   }
+/*======NAVBAR======*/
+ ul {
+    list-style: none;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    display:inline
+  }
+
+p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+/*======TABLA EN INDEX======*/
+thead, th, td {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
+    background-color: aliceblue;
+}
+
+/*======STYLE A BOX BOOSTRAP =====*/
+.text_color{
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: right;
+}
+.box__bootstrap{
+    border-top: rgb(64, 89, 133) solid 0.5rem;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: rgb(64, 89, 133);
+}
+
+.container__blog{
+    text-align: center;
+}
+
+/*======TRANSICIONES=====*/
+main, .form_container{
+    font-size: 1.5rem;
+}
+.form_container{
+    background-image: url("../images/plantadetratamiento.png")    
+}
+
+.service__transition{
+    transition: all 2s;
+}
+.service__transition:hover{
+    transform: scale(1.2);
+}
+
+
+ div select, input,textarea, button{
+    background-color: white;
+    width: 30%;
+    margin: 0.5rem;  
+}
+/*======GRID DE NOTICIAS=====*/
+
+.contenedor{
+    display: grid;
+    height: 100%; /*ocupa el alto de la pantalla*/
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+ 
+ .item{
+    border: 3px solid white;
+    padding: 5%;
+    font-family: sans-serif, Arial, Helvetica ;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, rgb(97, 234, 222) 0%, rgb(30, 168, 255) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+ }
+
+/*=====FOOTER=====*/
+footer{
+    width: 100%;
+    padding: 2rem 0px;
+    background-color:aliceblue;
+    background-size: cover;
+    
+}
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 140rem;
+    margin: auto;
+    font-size: 1.5rem;
+    margin-top: 6rem;
+    background: -webkit-linear-gradient (to right, #50b6b6, #3f475f);
+    background: linear-gradient(to right, #50b6b6, #3f475f);
+}
+.box__footer{
+display: flex;
+flex-direction: column;
+padding: 4rem;
+
+}
+.box__footer .logo img{
+    width: 12rem;
+    margin-top: 4rem;
+}
+.box__footer .terms p {
+    max-width: 25rem;
+    margin-top: 0rem;
+    font-weight: 200;
+    color:aliceblue;
+    font-size: 2.2rem; 
+    font-weight: bold;
+}
+.box__footer h2{
+    margin-bottom: 1.5rem;
+    color:aliceblue;
+    font-weight: 700;
+}
+.box__footer a{
+    margin-top: 1.5rem;
+    color: aliceblue;
+    font-weight: 700;
+}
+.box__footer a :hover{
+    opacity: 0.9;
+}
+.box__footer a .fab{
+    font-size: 2rem;
+}
+.box__copyright{
+    max-width: 140rem;
+    margin: auto;
+    text-align: center;
+    padding: 0rem 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.box__copyright p{
+    margin-top: 2rem;
+    color: #7a7a7a;
+    font-size: 1.5rem;
+}
+
+   
+/*=====DISEÑO RESPONSIVE====*/
+
+/*=====PANTALLA GRANDE=====*/
+@media (max-width: 1032px) {
+    .service_list {
+    flex-flow:column;
+}
+}
+@media (max-width: 940px) { 
+    .service__transition h3{
+    font-size: 1.2rem;
+  }
+ }
+
+/*=====PANTALLA MEDIANA=====*/
+
+
+@media (max-width: 768px) {
+    footer div p{
+        font-size: 1.5rem;
+    }
+    .footer_contact div, p, iframe{
+        width: 100%;
+    }
+    .footer_contact div img{
+        width: 15%
+    }
+  }
+.service_list{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+}
+.service {
+    width: auto;
+    margin: 0
+}
+
+/*====PANTALLA INTERMEDIA=====*/
+@media (max-width: 560px) {
+    .form_container{
+        justify-content: center;
+    }
+   .service__transition h3{
+        font-size: 0.7rem;
+      }
+    .footer_contact div, p, iframe{
+        width: 100%
+    }
+    header nav div p {
+       font-size: 1.5rem;
+    }
+    footer div p{
+        font-size: 1.5rem
+    }
+    .contenedor{
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+    }
+    .service {
+        background-size: 50%;
+        text-align: center;
+    }
+  }
+
+  /*=====PANTALLA PEQUEÑA=====*/
+@media (max-width: 380px) {
+    .contenedor{
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr;
+    }
+   }

@@ -1,0 +1,106 @@
+//style box presentacion noticias, servicios y contacto
+.text_color{
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: right;
+}
+.box__bootstrap{
+    border-top: $azul64 solid 0.5rem;
+}
+//text del blog
+.container__blog {
+    h3{
+    text-align: center;
+}
+}
+
+//formulario contacto
+.form_container{
+    font-size: nth($size , 1);
+    background-image: url("../images/plantadetratamiento.png");
+    @include box-flex (right, center, wrap)
+  }  
+button{
+        background-color: $white;
+        width: 97%;
+        margin: 0.5rem;  
+}
+//transicion de servicios
+.service__transition{
+    transition: all 2s;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+//grid de noticias
+.contenedor{
+    display: grid;
+    height: 100%; /*ocupa el alto de la pantalla*/
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+ 
+ }
+ .item{
+    border: 3px solid $white;
+    padding: 5%;
+    font-family: sans-serif, Arial, Helvetica ;
+    color: $white;
+    text-align: center;
+    font-size: 2rem;
+    background: map-get($gradiente, gradient1);
+    @include box-flex (center, center, wrap)
+ }
+ 
+ //Media Query
+ @media(min-width: 1326px) {
+    body{
+    width: 100%;
+    height: auto;
+}
+}
+@media(max-width: 1030px) { 
+
+ .container__blog{
+    width: 80%;
+  }
+  .service_list{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+}
+}
+@media(max-width: 920px){
+    .container-fluid{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    footer div p{
+        font-size: 1.5rem;
+    }
+    .footer_contact div, p, iframe{
+        width: 100%;
+    }
+    .footer_contact div img{
+        width: 15%
+    }
+}
+//Pantalla Mediana
+@media (max-width: 560px) {
+.service__transition h3{
+    font-size: 0.7rem;
+  }
+.contenedor{
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+}
+}
+
+//Pantalla Pequeña
+ @media (max-width: 380px) {
+    .contenedor{
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr;
+    }
+   }

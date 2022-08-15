@@ -1,0 +1,26 @@
+@import 'base/listas';
+@import 'base/maps';
+@import 'base/mixin';
+@import 'base/variables';
+@import 'componentes/navbar';
+@import 'componentes/main';
+@import 'componentes/footer';
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+   font-family: sans-serif, Tahoma, Verdana;
+   }
+.main_noticias, .main_index, .main_servicios, .main_blog{
+    width: 100%;
+    height: auto;
+    @include box-flex(center, center, wrap);
+}
