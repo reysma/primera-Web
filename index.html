@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <title>Gestión Ambiental | Gesamb</title>
+    <meta name="description" content="Ofrecemos asesoria, servicios y consultoria más adecuados para las industrias, empresas productivas, desde Chile para el Mundo">
+    <meta name="keywords" content="Gestión Ambiental, Gesamb, Consultoria, Residuos, Industrias, Ambiente, Asesoria, Manejo, Impacto Ambiental, Evaluacion Impactos, Seguridad, Salud Ocupacional, Seremi, Ministerio Ambiente, Ley Rep, Diseño, Proyectos...">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <style>
@@ -18,15 +21,13 @@
 </head>
 <body>
     <!-- fila logo + nav-->
-    <nav class="navbar navbar-expand-lg mt-2 mb-2 navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"><img src="./images/logo.png" class="logo-empresa" alt="logo-empresa"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
+    <nav class="navbar navbar-expand-lg mt-2 mb-2 bg-light">
+      <div class="container-fluid">  
+      <a class="navbar-brand" href="index.html"><img src="./images/favicon.ico" class="logo Gesamb" alt="logo Gesamb"></class></a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./pages/servicios.html">Servicios</a>
@@ -42,49 +43,50 @@
             </li>
           </ul>
         </div>
-      </nav>    
+        <a class="navbar-brand" href="index.html"><img src="./images/logogesamb.png" class="logo Gesamb" alt="logo Gesamb"></class></a>
+      </div> 
+      </nav>   
         <!--cierre de fila logo + nav-->
 
     <!--fila de informacion de mi pagina web-->
     <!--Inicio de carrusel-->
-    <div id="carousel1" class="carousel slide" data-ride="carousel" data-interval="4000">
-        <ol class="carousel-indicators">
-          <li data-target="#carousel1" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel1" data-slide-to="1"></li>
-          <li data-target="#carousel1" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="./images/carrusel5.jpg" alt="First slide">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>GESTION AMBIENTAL</h5>
-                <p>Las Energias Alternativas como medio para disminuir el Calentamiento Global</p>
-            </div>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-interval="4000">
+      <div class="carousel-indicators"> 
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="./images/carrusel5.jpg" alt="Parque Eolíco como estrategia de reducir el consumo energetico mediante conbustibles fosiles">
+          <div class="carousel-caption d-none d-md-block bg-secondary opacity-75 fs-1">
+            <h1>Optimice su Negocio Mediante una Eficiente Gestión Ambiental de sus Procesos</h1>
+            <p>Ofrecemos asesoria, servicios y consultoria más adecuados para las industrias</p>
           </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="./images/carrusel6.jpg" alt="Second slide">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>EQUIPO GESBAM</h5>
-                <p>Equipo Multidiciplinario al Servicio de su Empresa</p>
-            </div>
         </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="./images/carrusel4.png" alt="Third slide">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>TODOS NECESITAMOS UN PLANETA MAS LIMPIO</h5>
-                <p>Los Seres Humanos son el Responsable de la Gran Contaminacion de Aire, Suelos y Aguas</p>
-            </div>
+        <div class="carousel-item empresas">
+          <img class="d-block w-100" src="./images/carrusel6.jpg" alt="Planta de tratamiento de Gesbam, nos aseguramos que sus residuos liquidos cumplan con las exigencias ambientales">
+          <div class="carousel-caption d-none d-md-block bg-secondary opacity-75">
+            <h2>El Equipo Gesamb se Encarga de Darle Soluciones Ambientales de Forma Integral</h2>
+            <p>Equipo Multidiciplinario al servicio de empresas productivas, en Chile y el Mundo</p>
+          </div>
         </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./images/carrusel4.png" alt=" Un arbol sembrado cada dia cuida el ambiente y nos brinda oxigeno por decadas">
+          <div class="carousel-caption d-none d-md-block bg-secondary opacity-75">
+                <h2>Gesamb Ayuda a sus Clientes a Establecer y Cumplir con los Pasivos Ambientales</h2>
+                <p>Cumplimos con los requerimientos y necesidades de evaluacion de los impactos ambientales</p>
+          </div>
         </div>
-        <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>    
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
     <!-- fin del carousel-->
     <!-- inicio main con bootstrap-->
@@ -123,7 +125,7 @@
   <div class="container__footer">
       <div class="box__footer">
           <div class="logo">
-              <img src="./images/logo.png" alt="logo">
+              <img src="./images/logocircular.png" alt="logo Gesamb">
           </div>
       </div>
       <div class="box__footer">
@@ -140,7 +142,7 @@
           <a target="_blank" href="https://retc.mma.gob.cl/">RETC</a>
       </div>
       <div class="box__footer">
-          <h2>Gesbam</h2>
+          <h2>Gesamb</h2>
           <a href="#">Acerca de</a>
           <a href="#">Profesionales</a>
           <a href="#">Procesos</a>
@@ -148,7 +150,7 @@
       </div>
       <div class="box__footer">
           <h2>Redes Sociales</h2>
-          <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+          <a href="#"><i class="fab fa-facebook-square"></i> Facebook</a>
           <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
           <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
           <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
@@ -157,13 +159,10 @@
   <div class="box__copyright">
       <div> <p>Todos los derechos reservados © 2022 <b>GESAMB</b></p>
       </div>
-      <div><p>contacto@gesamb.cl </p>
-      </div>
-  </div>
+      <p><i class="fa-solid fa-envelope"></i>contacto@gesamb.cl</p>
 </footer>
 <!--fin del footer-->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 </body>
 </html>
