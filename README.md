@@ -16,3 +16,4 @@ las recomendaciones de la profesora.
 10. Corregui el desplazamiento del carrusel del index y blog, ademas se cambiaron los textos para agregar el h1.
 11. Se añadio mediante cards los servicios en la pagina correspondiente a los mismos.
 12. Se añadio el h1, etiqueta alt para todas las paginas del proyecto.
+13. Se dio estilo a la pagina de contacto, quedo funcional, puede enviar los datos ingresados.
