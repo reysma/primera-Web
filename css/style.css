@@ -21,6 +21,10 @@ p {
   color: rgb(64, 89, 133);
 }
 
+.navbar-collapse {
+  flex-grow: 0;
+}
+
 .text_color {
   font-size: 3rem;
 }
@@ -112,6 +116,9 @@ button {
 @media (max-width: 920px) {
   .container-fluid {
     font-size: 1rem;
+  }
+  section h1 {
+    display: none;
   }
 }
 @media (max-width: 768px) {
