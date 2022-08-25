@@ -12,10 +12,14 @@ p {
     text-align: center;
     font-size: 1.5rem;
 }
-#navbarNav{
+#navbarSupportedContent{
   .navbar-nav {
      .nav-link{
         color:$azul64;
+        transition: all 1s;
+        &:hover{
+            transform: scale(1.1);
+        }
  }
 }
 }

@@ -72,6 +72,16 @@ button{
     width: 100%;
     height: auto;
 }
+.main_servicios h5{
+    font-size: 1.8rem;
+}
+.service__transition{
+    font-size:1.6rem;
+}
+.main_blog p{
+    font-size: 1.3rem;
+    font-weight: none;
+}
 }
 @media(max-width: 1030px) { 
 
@@ -83,7 +93,16 @@ button{
     flex-direction: wrap;
     justify-content: space-between;
 }
-
+.main_servicios h5{
+    font-size: 1.3rem;
+}
+.service__transition{
+    font-size:1.3rem;
+}
+.main_blog p, .main_blog h5, h3{
+    font-size: 1.1rem;
+    font-weight: none;
+}
 }
 @media(max-width: 920px){
     .container-fluid{
@@ -91,6 +110,13 @@ button{
     }
     section h1{
         display: none;
+    }
+    .service__transition{
+        font-size:1.2rem;
+    }
+    .main_blog p, .main_blog h5, h3{
+        font-size: 0.9rem;
+        font-weight: none;
     }
 }
 
@@ -102,7 +128,21 @@ button{
         width: 100%;
     }
     .footer_contact div img{
-        width: 15%
+        width: 15%;
+    }
+    .main_servicios p{
+       font-size: 1rem;
+    }
+    .main_servicios h5{
+        font-size: 1.1rem;
+        font-weight: none;
+    }
+    .service__transition{
+        font-size:1rem;
+    }
+    .main_blog p, .main_blog h5, h3{
+        font-size: 0.9rem;
+        font-weight: none;
     }
 }
 //Pantalla Mediana
@@ -114,6 +154,23 @@ button{
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr; 
 }
+div .logo{
+    background-position: center;
+}
+.main_servicios p{
+    font-size: 0.7rem
+ }
+.main_servicios h5{
+    font-size: 0.8rem;
+    font-weight: none;
+}
+.service__transition{
+    font-size:1rem;
+}
+.main_blog p, .main_blog h5, h3{
+    font-size: 0.8rem;
+    
+}
 }
 
 //Pantalla Pequeña
@@ -121,5 +178,12 @@ button{
     .contenedor{
         grid-template-columns: 1fr; 
         grid-template-rows: 1fr;
+    }
+    .main_servicios p{
+        display: none;
+     }
+     .main_blog p, .main_blog h5, h3{
+        font-size: 0.5rem;
+        
     }
    }

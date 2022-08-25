@@ -17,11 +17,17 @@
       <!-- fila logo + nav-->
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">  
-        <a class="navbar-brand" href="../index.html"><img src="../images/favicon.ico" class="logo Gesamb" alt="logo Gesamb"></class></a>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+          <div class="navbar-brand">
+            <a href="../index.html"><img src="../images/favicon.ico" class="logo Gesamb" alt="logo Gesamb"></class></a>
+            <a href="../index.html"><img src="../images/logogesamb.png" class="logo Gesamb" alt="logo Gesamb"></class></a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="../index.html">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./servicios.html">Servicios</a>
@@ -37,7 +43,6 @@
               </li>
             </ul>
           </div>
-          <a class="navbar-brand" href="../index.html"><img src="../images/logogesamb.png" class="logo Gesamb" alt="logo Gesamb"></class></a>
         </div> 
         </nav>     
     <!--cierre de fila logo + nav-->
@@ -54,62 +59,76 @@
     
     <!-- Seccion de servicios-->  
     <main class="main_servicios"> 
-      <div class="container-fluid d-flex flex-row justify-content-evenly row row-cols-1 p-3 mb-2 row-cols-md-3 g-4 w-75">
-      <div class="col">
+      <div class="container-fluid d-flex flex-column pt-4 mb-2 p-4 w-75">
+      <div class="row"> 
+        <div class="col-12 mb-5">
+         
+        <div class="row mb-5">
+        <div class="col-4">
         <div class="card h-100 service__transition">
           <img src="../images/residuosindustriales.png" class="card-img-top" alt="Servicio Industrial Gesbam">
           <div class="card-body">
-            <h5 class="card-title fw-bolder fs-3 text-center">SERVICIO INDUSTRIAL</h5>
+            <h5 class="card-title fw-bolder text-center">SERVICIO INDUSTRIAL</h5>
             <p class="card-text">Este servicio cuenta con asesoria permanente, se encarga de atender el sector de industrias manufactureras.</p>
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-4">
         <div class="card h-100 service__transition">
           <img src="../images/residuospeligrosos.png" class="card-img-top" alt="Manejo de Residuos Peligrosos">
           <div class="card-body">
-            <h5 class="card-title fw-bolder fs-3 text-center">RESIDUOS PELIGROSOS</h5>
+            <h5 class="card-title fw-bolder text-center">RESIDUOS PELIGROSOS</h5>
             <p class="card-text">Empresas, industrias grandes o pequeñas pueden generar este tipo de residuo, el cual se maneja de forma especial.</p>
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-4">
         <div class="card h-100 service__transition">
           <img src="../images/residuosdomiciliarios.png" class="card-img-top" alt="Servicio Comercial Gesamb">
           <div class="card-body">
-            <h5 class="card-title fw-bolder fs-3 text-center">SERVICIO COMERCIAL</h5>
+            <h5 class="card-title fw-bolder text-center">SERVICIO COMERCIAL</h5>
             <p class="card-text">Este servicio atiende un sector de empresas que necesitan un buen manejo de sus residuos de tipo asimilables.</p>
           </div>
         </div>
       </div>
-      <div class="col">
+      </div>
+    </div>
+    <div class="row"> 
+      <div class="col-12 mb-5">
+       
+      <div class="row mb-5">
+      <div class="col-4">
         <div class="card h-100 service__transition">
           <img src="../images/residuosliquidos.png" class="card-img-top" alt="Manejo de Residuos Liquidos">
           <div class="card-body">
-            <h5 class="card-title fw-bolder fs-3 text-center">RESIDUOS LIQUIDOS</h5>
+            <h5 class="card-title fw-bolder text-center">RESIDUOS LIQUIDOS</h5>
             <p class="card-text">Asesoramos a nuestros clientes en el transporte, disposicion y declaracion de todo tipo de residuo liquido, lodos, etc..</p>
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-4">
         <div class="card h-100 service__transition">
           <img src="../images/reciclajes.png" class="card-img-top" alt="Servicio de Reciclaje">
           <div class="card-body">
-            <h5 class="card-title fw-bolder fs-3 text-center">SERVICIO DE RECICLAJE</h5>
+            <h5 class="card-title fw-bolder text-center">SERVICIO DE RECICLAJE</h5>
             <p class="card-text">Gestionamos el manejo exitosos de todos los reciduos con capacidad de ser valorizados en el mercado.</p>
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-4">
         <div class="card h-100 service__transition">
           <img src="../images/destruccionresiduos.png" class="card-img-top" alt="Destrucion de Mermas">
           <div class="card-body">
-            <h5 class="card-title fw-bolder fs-3 text-center">DESTRUCCION DE MERMAS</h5>
+            <h5 class="card-title fw-bolder text-center">DESTRUCCION DE MERMAS</h5>
             <p class="card-text">En algunas ocasiones se vencen materias primas utilizados en la elaboracion de producto, brindamos la mejor opcion de destruccion de sus residuos. </p>
           </div>
         </div>
       </div>
     </div>
+    </div>
+    </div>
+      </div>
+      </div>
   </main>
 
 <!--inicio del footer-->
