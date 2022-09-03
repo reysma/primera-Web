@@ -6,6 +6,9 @@
 .box__bootstrap{
     border-top: $azul64 solid 0.5rem;
 }
+.main_servicios{
+   padding-right: 5rem;
+}
 //text del blog
 .container__blog {
     h3{
@@ -19,7 +22,14 @@
     background-image: url("../images/plantadetratamiento.png");
     @include box-flex(center, center, wrap);
     justify-content: space-around;
+   
   }  
+ form{
+    background-color: $alblue;
+    width: 30rem;
+    border-radius: 1rem;
+    opacity: 0.85;
+  }
 button{
         background-color: $white;
         width: 100%;
@@ -50,6 +60,7 @@ button{
 //grid de noticias
 .contenedor{
     display: grid;
+    width: 120rem;
     height: 100%; /*ocupa el alto de la pantalla*/
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -66,7 +77,7 @@ button{
     @include box-flex (center, center, wrap)
  }
  
- //Media Query
+ //Media Query Pantallas Grandes//
  @media(min-width: 1326px) {
     body{
     width: 100%;
@@ -119,7 +130,7 @@ button{
         font-weight: none;
     }
 }
-
+//Pantalla Mediana//
 @media (max-width: 768px) {
     footer div p{
         font-size: 1.5rem;
@@ -145,7 +156,7 @@ button{
         font-weight: none;
     }
 }
-//Pantalla Mediana
+
 @media (max-width: 560px) {
 .service__transition h3{
     font-size: 0.7rem;
@@ -173,7 +184,7 @@ div .logo{
 }
 }
 
-//Pantalla Pequeña
+//Pantalla Pequeña//
  @media (max-width: 380px) {
     .contenedor{
         grid-template-columns: 1fr; 
